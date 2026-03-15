@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Isma Chavez</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<!-- 👇 hace la página clara/blanca sin tocar las demás -->
+<body class="shop-light">
+  <!-- NAV -->
+  <header class="nav">
+    <div class="brand"><a href="index.html">ISMA CHAVEZ</a></div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-btn" aria-label="Open menu">&#9776;</label>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#news">News</a>
+      <a href="books.html">Books</a>
+      <a class="active" href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section shop-wrap">
+    <h1 class="shop-title">Shop</h1>
+
+    <!-- GRID de “productos” (tus libros) -->
+    <div class="shop-grid">
+      <!-- Lunas Rotas -->
+      <article class="shop-card">
+        <a href="https://www.amazon.com/Lunas-Rotas-Spanish-Isma-Chavez-ebook/dp/B0F15RWBY4" target="_blank" rel="noopener">
+          <div class="shop-thumb">
+            <img src="assets/lunas-rotas.jpg" alt="Lunas Rotas — Isma Chavez">
+          </div>
+          <h3 class="shop-name">Lunas Rotas</h3>
+          <p class="shop-desc">Poesía sobre amor, grietas y renacer.</p>
+          <div class="shop-cta">Ver en Amazon</div>
+        </a>
+      </article>
+
+      <!-- Vive, Ama, Ríe (ES) -->
+      <article class="shop-card">
+        <a href="https://www.amazon.com/Vive-Ama-R%C3%ADe-Pensamientos-Desordenados/dp/B0DLKNPF1X" target="_blank" rel="noopener">
+          <div class="shop-thumb">
+            <img src="assets/vive-ama-rie-es.jpg" alt="Vive, Ama, Ríe (ES) — Isma Chavez">
+          </div>
+          <h3 class="shop-name">Vive, Ama, Ríe (ES)</h3>
+          <p class="shop-desc">Poesía y reflexiones para sentir y sanar.</p>
+          <div class="shop-cta">Ver en Amazon</div>
+        </a>
+      </article>
+
+      <!-- Live, Love, Laugh (EN) -->
+      <article class="shop-card">
+        <a href="https://www.amazon.com/Live-Love-Laugh-Scattered-Thoughts/dp/B0DXV8SH1B" target="_blank" rel="noopener">
+          <div class="shop-thumb">
+            <img src="assets/vive-ama-rie-en.jpg" alt="Live, Love, Laugh (EN) — Isma Chavez">
+          </div>
+          <h3 class="shop-name">Live, Love, Laugh (EN)</h3>
+          <p class="shop-desc">Poetry & reflections for deep feelers.</p>
+          <div class="shop-cta">View on Amazon</div>
+        </a>
+      </article>
+    </div>
+
+    <!-- Aviso tipo “más productos pronto” -->
+    <section class="shop-note">
+      <h3>Próximamente</h3>
+      <p>
+        Estoy preparando <strong>más libros</strong>, <strong>novelas</strong> y posiblemente
+        <strong>merch</strong> (prints, camisetas, arte). <br/>
+        ¡Sigue atento!
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer footer-light">
+    <div class="tiny tiny-light">© 2025 Isma Chavez • All rights reserved</div>
+  </footer>
+</body>
+</html>

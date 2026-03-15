@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Isma Chavez</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand"><a href="index.html">ISMA CHAVEZ</a></div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-btn" aria-label="Open menu">&#9776;</label>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#news">News</a>
+      <a href="books.html#lunas-rotas">Books</a>
+      <a href="shop.html">Shop</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="section-head"><h1>Contact</h1></div>
+    <div class="contact-grid">
+      <!-- Reemplaza YOUR_FORM_ENDPOINT por el que te de el servicio (p. ej. Formspree) -->
+     <form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    
+  </p>
+
+ <!-- AQUI VA EL ASUNTO -->
+  <label>Asunto
+    <input type="text" name="subject" placeholder="Motivo del mensaje" required>
+  </label>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+
+
+      <div>
+        <h3>También puedes escribirme</h3>
+        <p>Instagram: <a href="https://instagram.com/isma.writer" target="_blank" rel="noopener">@isma.writer</a></p>
+       
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="tiny">© 2025 Isma Chavez • All rights reserved</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bajo el Cielo de Mariposas | Capítulo 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV IGUAL QUE EN LAS DEMÁS PÁGINAS -->
+  <header class="nav">
+    <div class="brand"><a href="index.html">ISMA CHAVEZ</a></div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-btn" aria-label="Open menu">&#9776;</label>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#news">News</a>
+      <a href="books.html#lunas-rotas">Books</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="section mariposas-layout">
+    <!-- Columna portada -->
+    <div class="mariposas-cover">
+      <img src="assets/bajo-el-cielo-cover.jpg"
+           alt="Bajo el Cielo de Mariposas - portada">
+    </div>
+
+    <!-- Columna texto + formulario -->
+    <section class="mariposas-info">
+      <h1>Bajo el Cielo de Mariposas</h1>
+      <h2>Capítulo 1 gratuito 🦋</h2>
+
+      <p>
+        He estado escribiendo esta novela por mucho tiempo. Es una historia que
+        guardé, corregí y volví a escribir, porque creció conmigo.
+      </p>
+      <p>
+        Así comienza la historia de dos niños unidos por un cariño imposible de
+        medir, y por todas las sorpresas que la vida les tenía preparadas.
+      </p>
+
+      <div class="mariposas-box">
+        <p><strong>Recibe el Capítulo 1 en tu correo</strong></p>
+        <p class="mariposas-note">
+          Déjame tu email y te enviaré el capítulo completo apenas termine de
+          pulirlo.
+        </p>
+
+        <!-- FORMULARIO NETLIFY (MISMO SISTEMA QUE YA USAS) -->
+        <form class="contact-form"
+              name="capitulo-mariposas"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="company"
+              action="/thanks.html">
+
+          <!-- obligatorio para Netlify -->
+          <input type="hidden" name="form-name" value="capitulo-mariposas">
+
+          <!-- honeypot invisible -->
+          <p style="position:absolute;left:-9999px;">
+            <label>Company <input name="company"></label>
+          </p>
+
+          <label>Email
+            <input type="email" name="email"
+                   placeholder="tucorreo@email.com" required>
+          </label>
+
+          <button type="submit">Recibir Capítulo 1</button>
+        </form>
+      </div>
+
+      <p class="mariposas-credit">
+        Autor intelectual y derechos reservados: Isma.
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER CON REDES -->
+  <footer class="footer">
+    <div class="social-bar">
+      <a href="https://instagram.com/isma.writer" target="_blank" rel="noopener" class="social-pill">Instagram</a>
+      <a href="https://tiktok.com/@isma.writer" target="_blank" rel="noopener" class="social-pill">TikTok</a>
+      <a href="mailto:tucorreo@example.com" class="social-pill">Email</a>
+    </div>
+    <div class="tiny">© 2025 Isma Chavez • All rights reserved</div>
+  </footer>
+</body>
+</html>

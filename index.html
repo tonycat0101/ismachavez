@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isma Chavez | Poet & Spoken Word</title>
+  <meta name="description" content="Poetry, books, spoken word by Isma Chavez." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand"><a href="index.html">ISMA CHAVEZ</a></div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-btn" aria-label="Open menu">&#9776;</label>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="#news">News</a>
+      <a href="books.html#lunas-rotas">Books</a>
+      <a href="shop.html">Shop</a>
+     <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+<!-- LANDING TIPO JULIA WELLS -->
+<section id="home" class="author-landing">
+  <div class="site-card">
+    
+    <!-- Encabezado de la tarjeta -->
+    <header class="card-header">
+      <div class="site-title">ISMA&nbsp;CHAVEZ</div>
+      
+    </header>
+
+    <!-- New Release + portada -->
+    <section class="card-main">
+      <div>
+        <div class="label">New Release</div>
+        <h2 class="book-title">Bajo el Cielo de Mariposas</h2>
+        <p class="book-series">
+          Get the latest release in the <em>Mariposas</em> series.
+        </p>
+
+        <p class="lead-text">
+          Vilma creció entre mariposas y promesas rotas. En aquel campo donde conoció a Mateo,
+          juró que el amor podía ser refugio. Años después, cuando su vida parece estable
+          pero vacía, el pasado vuelve a cruzarse en su camino.
+        </p>
+
+        <p class="lead-text">
+          Entre recuerdos, culpas y decisiones imposibles, deberá elegir entre la versión
+          de sí misma que los demás esperan y la que realmente quiere ser.
+        </p>
+
+        <!-- Cambia el href por el link real de Amazon -->
+        <a href="#waitlist" class="btn-buy">Join the waitlist</a>
+
+      </div>
+
+      <div class="cover-wrapper">
+        <img src="assets/bajoelcielo.png" alt="Portada Bajo el Cielo de Mariposas">
+      </div>
+    </section>
+
+    <!-- About the Author -->
+    <section class="card-footer">
+      <div class="author-photo">
+        <img src="assets/isma2.jpg" alt="Isma Chavez">
+      </div>
+      <div>
+        <h3 class="author-text-title">About the Author</h3>
+        <p class="author-text-body">
+          Isma Chavez escribe sobre amores que duelen, familias rotas y segundas oportunidades.
+          Combina poesía y narrativa para contar historias íntimas que se sienten cercanas,
+          como confesiones dichas en voz baja, entre mariposas y noches de insomnio.
+        </p>
+      </div>
+    </section>
+
+  </div>
+</section>
+
+
+<section id="waitlist" class="section waitlist">
+  <div class="waitlist-inner">
+    <h2>Coming Soon – Bajo el Cielo de Mariposas</h2>
+    <p>Déjame tu email y te avisaré cuando la novela esté disponible.</p>
+
+    <form name="waitlist-bajo-el-cielo"
+          method="POST"
+          data-netlify="true">
+
+      <input type="hidden" name="form-name" value="waitlist-bajo-el-cielo">
+
+      <label class="sr-only" for="waitlist-email">Email</label>
+      <div class="waitlist-row">
+        <input id="waitlist-email"
+               type="email"
+               name="email"
+               placeholder="tucorreo@email.com"
+               required>
+        <button type="submit">Join the waitlist</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+  <!-- NEWS -->
+<section id="news" class="section">
+  <div class="section-head"><h2>News</h2></div>
+  
+  <div class="news-grid">
+
+    <article class="news-card">
+      <div class="ph" style="
+        background: url('assets/isma-perfil-news.jpg') center/cover no-repeat; 
+        height: 160px; 
+        /* Ajusta la posición para centrar tu rostro */
+        background-position: 50% 20%; 
+        ">
+      </div>
+      <div class="body">
+        <time>6 de Noviembre, 2025</time>
+        <h3>¡Hito: 18K en Instagram!</h3>
+        <p>Un enorme gracias a cada uno de ustedes por su apoyo constante. Su comunidad inspira cada poema. ¡Sigamos creciendo!</p>
+        <a href="https://instagram.com/isma.writer" target="_blank" style="font-size:.9rem">Seguir en Instagram →</a>
+      </div>
+    </article>
+
+    <article class="news-card">
+      <div class="ph" style="
+        background: url('assets/poema-tragedia-amor.jpg') center/contain no-repeat; 
+        height: 160px; 
+        /* Color de fondo oscuro detrás de la ilustración */
+        background-color: #17181a; 
+        ">
+      </div>
+      <div class="body">
+        <time>29 de Octubre, 2025</time>
+        <h3>Nuevo Poema Ilustrado</h3>
+        <p>Les dejo un breve pero hermoso poema ilustrado. Dale un vistazo y déjame tu opinión.</p>
+        <a href="https://instagram.com/isma.writer" target="_blank" style="font-size:.9rem">Ver el arte aquí →</a>
+      </div>
+    </article>
+    
+    <article class="news-card">
+      <div class="ph" style="
+        background: url('assets/comingsoon.jpg') center/cover no-repeat; 
+        height: 160px; 
+        /* Opción: puedes oscurecer un poco la imagen para que el texto resalte si decides añadirle un título encima */
+        ">
+      </div>
+      <div class="body">
+        <time>1 de Noviembre, 2025</time>
+        <h3>Proyectos en Desarrollo ✍️</h3>
+        <p>¡Algo grande se acerca! Estoy trabajando en nuevas ideas literarias y artísticas. Estén atentos a mis redes sociales.</p>
+      </div>
+    </article>
+
+  </div>
+</section>  <!-- BOOKS PREVIEW -->
+  <section id="books" class="section">
+    <div class="section-head"><h2>Books</h2><a href="books.html#lunas-rotas" class="btn" style="font-size:.9rem">Ver todos →</a></div>
+    <div class="grid grid-3">
+      <article class="book">
+        <img src="assets/lunas-rotas.jpg" alt="Lunas Rotas">
+        <div>
+          <h3>Lunas Rotas</h3>
+          <p>Un viaje poético por el amor, la ruptura y la resiliencia.</p>
+          <p><strong>Amazon:</strong> <a href="https://www.amazon.com/Lunas-Rotas-Spanish-Isma-Chavez-ebook/dp/B0F15RWBY4" target="_blank" rel="noopener">Comprar</a></p>
+        </div>
+      </article>
+      <article class="book">
+        <img src="assets/vive-ama-rie-es.jpg" alt="Vive, Ama, Ríe (ES)">
+        <div>
+          <h3>Vive, Ama, Ríe (ES)</h3>
+          <p>Poesía íntima sobre amor, pérdida y fuerza interior.</p>
+          <p><strong>Amazon:</strong> <a href="https://www.amazon.com/Vive-Ama-R%C3%AEe-Pensamientos-Desordenados/dp/B0DLKNPF1X" target="_blank" rel="noopener">Comprar</a></p>
+        </div>
+      </article>
+      <article class="book">
+        <img src="assets/vive-ama-rie-en.jpg" alt="Live, Love, Laugh (EN)">
+        <div>
+          <h3>Live, Love, Laugh (EN)</h3>
+          <p>Poetry & reflections for deep feelers—hopeful and intimate.</p>
+          <p><strong>Amazon:</strong> <a href="https://www.amazon.com/Live-Love-Laugh-Scattered-Thoughts/dp/B0DXV8SH1B" target="_blank" rel="noopener">Buy</a></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+  <div class="section-head"><h2>Contact</h2></div>
+
+  <div class="contact-grid">
+    <!-- FORMULARIO NETLIFY (idéntico al de contact.html) -->
+    <form class="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="company"
+          action="/thanks.html">
+
+      <!-- NECESARIO para Netlify -->
+      <input type="hidden" name="form-name" value="contact">
+
+      <!-- Honeypot anti-spam (oculto) -->
+      <p style="position:absolute;left:-9999px;">
+        <label>Company <input name="company"></label>
+      </p>
+
+      <label>Nombre
+        <input type="text" name="name" placeholder="Tu nombre" required>
+      </label>
+
+      <label>Email
+        <input type="email" name="email" placeholder="tucorreo@email.com" required>
+      </label>
+
+      <label>Asunto
+        <input type="text" name="subject" placeholder="Motivo del mensaje" required>
+      </label>
+
+      <label>Mensaje
+        <textarea name="message" rows="7" placeholder="Cuéntame…" required></textarea>
+      </label>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Columna de info (opcional) -->
+    <div>
+      <h3>También puedes escribirme</h3>
+      <p>Instagram: <a href="https://instagram.com/isma.writer" target="_blank" rel="noopener">@isma.writer</a></p>
+      
+     
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="tiny">© 2025 Isma Chavez • All rights reserved</div>
+  </footer>
+</body>
+</html>
