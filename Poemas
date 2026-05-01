@@ -1,0 +1,219 @@
+<!-- ========================= poems.html ========================= -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poems | Isma Chavez</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    .poems-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      max-width: 640px;
+    }
+
+    .poem-item {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 2.5rem;
+    }
+
+    .poem-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.75rem;
+    }
+
+    .poem-title {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 0.03em;
+    }
+
+    .poem-date {
+      font-size: 0.78rem;
+      font-weight: 300;
+      opacity: 0.5;
+    }
+
+    .poem-preview {
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.9;
+      opacity: 0.7;
+      white-space: pre-line;
+      font-style: italic;
+    }
+
+    .poem-full {
+      display: none;
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.9;
+      white-space: pre-line;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .toggle-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .poem-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 1rem;
+    }
+
+    .poem-tags span {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border: 1px solid currentColor;
+      border-radius: 20px;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="brand"><a href="index.html">ISMA CHAVEZ</a></div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-btn" aria-label="Open menu">&#9776;</label>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#news">News</a>
+      <a href="books.html#lunas-rotas">Books</a>
+      <a href="shop.html">Shop</a>
+      <a class="active" href="poems.html">Poems</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1>Poems</h1>
+
+    <div class="poems-list">
+
+      <!-- POEMA 1 -->
+      <article class="poem-item">
+        <div class="poem-header">
+          <h2 class="poem-title">La lluvia no avisa</h2>
+          <span class="poem-date">14 abr 2025</span>
+        </div>
+        <div class="poem-preview">Llega sin llamar,
+como los recuerdos
+que no pediste...</div>
+        <div class="poem-full">Llega sin llamar,
+como los recuerdos
+que no pediste.
+
+El tejado la recibe
+con el ruido exacto
+que necesitabas.
+
+Y tú te quedas quieta
+mirando el cristal
+aprender a borrarse.</div>
+        <button class="toggle-btn" onclick="togglePoem(this)">Leer poema completo</button>
+        <div class="poem-tags">
+          <span>melancolía</span>
+          <span>naturaleza</span>
+        </div>
+      </article>
+
+      <!-- POEMA 2 -->
+      <article class="poem-item">
+        <div class="poem-header">
+          <h2 class="poem-title">Raíces</h2>
+          <span class="poem-date">2 mar 2025</span>
+        </div>
+        <div class="poem-preview">No soy de aquí
+ni de ningún otro sitio...</div>
+        <div class="poem-full">No soy de aquí
+ni de ningún otro sitio.
+Soy del viaje.
+
+De la grieta entre dos tierras,
+del acento que no termina
+de decidirse.</div>
+        <button class="toggle-btn" onclick="togglePoem(this)">Leer poema completo</button>
+        <div class="poem-tags">
+          <span>identidad</span>
+          <span>pertenencia</span>
+        </div>
+      </article>
+
+      <!-- POEMA 3 -->
+      <article class="poem-item">
+        <div class="poem-header">
+          <h2 class="poem-title">El silencio habla</h2>
+          <span class="poem-date">18 ene 2025</span>
+        </div>
+        <div class="poem-preview">Entre dos palabras
+vive lo que nunca
+me atreví a decir...</div>
+        <div class="poem-full">Entre dos palabras
+vive lo que nunca
+me atreví a decir.
+
+No es vacío.
+Es el lugar donde guardo
+lo que más pesa.</div>
+        <button class="toggle-btn" onclick="togglePoem(this)">Leer poema completo</button>
+        <div class="poem-tags">
+          <span>silencio</span>
+          <span>introspección</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="tiny">© 2025 Isma Chavez • All rights reserved</div>
+  </footer>
+
+  <script>
+    function togglePoem(btn) {
+      const article = btn.closest('.poem-item');
+      const preview = article.querySelector('.poem-preview');
+      const full    = article.querySelector('.poem-full');
+      const isOpen  = full.style.display === 'block';
+
+      if (isOpen) {
+        full.style.display = 'none';
+        preview.style.display = 'block';
+        btn.textContent = 'Leer poema completo';
+      } else {
+        full.style.display = 'block';
+        preview.style.display = 'none';
+        btn.textContent = 'Cerrar';
+      }
+    }
+  </script>
+
+</body>
+</html>
